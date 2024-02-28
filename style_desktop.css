@@ -3,6 +3,40 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --primary-color: #222;
+    --_primary-color: #222;
+    --12-primary-color: #222;
+    --primary-color-12: #222;
+}
+
+.basket__block {
+    position: relative;
+}
+
+.dropdown-header{
+    font-size: 18px;
+    color: black;
+}
+.basket__block::after {
+    content: "0";
+    background-color: darkred;
+        font-size: 15px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: white;
+    top: 5px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.dropdown-item:hover{
+    color: red;
+}
+
 
 *, *::before, *::after {
     box-sizing: border-box;
