@@ -340,7 +340,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-image: url(../hw_7_8_9/img/footer/photo_subscribe.jpeg);
+    background-image: url(img/footer/photo_subscribe.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
