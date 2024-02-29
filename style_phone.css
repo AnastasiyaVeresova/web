@@ -6,9 +6,9 @@
 
     /*region header*/
 
-    .menu-link-hide{
+    /* .menu-link-hide{
      width: 0;
-    }
+    } */
 
     /*endregion*/
     /*region banner*/
@@ -57,7 +57,6 @@
 
     .button_add_to_cart{
         border: 2px solid #fff;
-        width: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -92,15 +91,7 @@
         opacity: 0;
         background-color: rgba(0,0,0,0.75);
     }
-   .catalog_card_fade:focus {
-        opacity: 1;
-      }
-    .catalog_card_fade:active {
-        opacity: 1;
-    }
-    .catalog_card_fade:hover {
-        opacity: 1;
-      }
+
 
     .add_to_cart{
         font-size: 14px;
