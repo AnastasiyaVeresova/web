@@ -8,6 +8,8 @@
     --_primary-color: #222;
     --12-primary-color: #222;
     --primary-color-12: #222;
+    --bs-link-color-rgb: #6c757d;
+    --bs-dropdown-link-active-bg: #6c757d;
 }
 
 .basket__block {
@@ -18,6 +20,7 @@
     font-size: 18px;
     color: black;
 }
+
 .basket__block::after {
     content: "0";
     background-color: darkred;
@@ -36,7 +39,7 @@
 .dropdown-item:hover{
     color: red;
 }
-
+.dropdown .dropdown-item:active {background: #fff; color:#000;}
 
 *, *::before, *::after {
     box-sizing: border-box;
