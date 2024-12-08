@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>shop</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header class="header center">
+<div class="header__left"><a href="index.html" class="logo"><img src="img/header/ok_index.svg" alt="logo"></a>
+<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.0586 17.6249C19.6703 15.8648 20.6272 13.6038 20.7688 11.2215C20.9103 8.8392 20.2279 6.48075 18.836 4.5422C17.4441 2.60365 15.4275 1.20306 13.125 0.575643C10.8224 -0.0517774 8.37412 0.132183 6.19119 1.09663C4.00826 2.06108 2.22365 3.74727 1.13706 5.87205C0.0504707 7.99682 -0.271923 10.4308 0.224019 12.7652C0.719961 15.0996 2.00403 17.1922 3.8606 18.6917C5.71717 20.1912 8.03316 21.0063 10.4196 20.9999C12.672 21.003 14.8635 20.269 16.6597 18.9099L24.4076 26.7169C24.4931 26.806 24.5956 26.8771 24.7089 26.926C24.8222 26.975 24.9442 27.0008 25.0676 27.0019C25.1913 27.0023 25.3138 26.9772 25.4273 26.9282C25.5409 26.8792 25.6431 26.8072 25.7276 26.7169C25.9016 26.536 25.9987 26.2949 25.9987 26.0439C25.9987 25.793 25.9016 25.5518 25.7276 25.3709L18.0586 17.6249ZM1.88565 10.4999C1.89848 8.81465 2.40996 7.17089 3.35561 5.77587C4.30126 4.38086 5.63875 3.29703 7.19946 2.66102C8.76017 2.02501 10.4742 1.86529 12.1256 2.202C13.7769 2.53871 15.2917 3.35678 16.4788 4.55307C17.6659 5.74935 18.4722 7.27031 18.7962 8.92421C19.1202 10.5781 18.9473 12.2909 18.2993 13.8467C17.6512 15.4024 16.5571 16.7315 15.1549 17.6664C13.7526 18.6013 12.105 19.1001 10.4196 19.0999C8.14819 19.0891 5.97384 18.1774 4.37386 16.5651C2.77388 14.9527 1.879 12.7714 1.88565 10.4999Z" fill="#E8E8E8"/>
+</svg>
+</div>
+<div class="header__right">
+            <div class="dropdown">
+                <a class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">
+                    <img src="img/header/burger.svg" alt="toggle"/>
+                </a>
+    
+                <ul class="dropdown-menu ms-3">
+                    <li><h1 class="dropdown-header fw-bold">Menu</h1></li>
+                    <li><a class="dropdown-item pink-color" href="#">MAN</a></li>
+                    <div class="ms-4">
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Bags</a></li>
+                        <li><a class="dropdown-item" href="#">Denim</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                    </div>
+    
+                    <li><a class="dropdown-item pink-color" href="#">WOMAN</a></li>
+                    <div class="ms-4">
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Jackets & Coats</a></li>
+                        <li><a class="dropdown-item" href="#">Polos</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                        <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    </div>
+    
+                    <li><a class="dropdown-item pink-color" href="#">KIDS</a></li>
+                    <div class="ms-4">
+                        <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Jackets & Coats</a></li>
+                        <li><a class="dropdown-item" href="#">Polos</a></li>
+                        <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                        <li><a class="dropdown-item" href="#">Shirts</a></li>
+                        <li><a class="dropdown-item" href="#">Bags</a></li>
+                    </div>
+                </ul>
+            </div>
+<a href="#" class="user"><img src="img/header/user.svg" alt="user"></a>
+<a href="#" class="basket"><img src="img/header/basket.svg" alt="basket"></a>
+
+</div>
+    </header>
+    <div class="top-head center">
+        <h2 class="top-heading__head">NEW ARRIVALS </h2>
+        <nav class="breadCrumbs">
+        <a href="" class="breadCrumbs__link">HOME</a>
+        <span class="breadCrumbs__link">/</span>
+        <a href="" class="breadCrumbs__link">MEN</a>
+                <span class="breadCrumbs__link">/</span>
+
+        <a href="" class="breadCrumbs__link breadCrumbs__link__site">NEW ARRIVALS</a>       
+    </nav>
+    </div>
+    <div class="bannerMain">
+<div class="imgBannerMain">
+    <div class="arrow"><</div>
+    <img src="img/main/banners/Layer 42.jpg" alt="">
+        <div class="arrow arrow_right">></div>
+
+</div>
+<div class="textCenterMain">
+<p class="textP1_textCenterMain">WOMEN COLLECTION</p>
+<hr class="hrMain">
+<p class="textP2_textCenterMain">MOSCHINO CHEAP AND CHIC</p>
+<p class="textP3_textCenterMain">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+<p class="price_textCenterMain">$561</p>
+<hr class="hrAfterPrice">
+<div class="blockLinkMain">
+    <a class="menu_textCenterMain" href="">CHOOSE COLOR<span>&nbsp;&nbsp;&nbsp;<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" fill="#6F6E6E"/>
+</svg>
+</span></a>
+   
+    <a class="menu_textCenterMain" href="">CHOOSE SIZE<span>&nbsp;&nbsp;&nbsp;<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" fill="#6F6E6E"/>
+</svg></a>
+    
+</span>
+    <a class="menu_textCenterMain" href="#">QUANTITY<span>&nbsp;&nbsp;&nbsp;<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z" fill="#6F6E6E"/>
+</svg></a>
+    
+</span></a>
+</div>
+<button class="button_addToCart"><svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.49847 22.185C5.50635 21.752 5.64091 21.3309 5.88519 20.9748C6.12947 20.6186 6.47261 20.3431 6.87158 20.1828C7.27055 20.0226 7.7076 19.9848 8.12781 20.0741C8.54802 20.1635 8.93269 20.376 9.23358 20.685C9.53447 20.994 9.73817 21.3857 9.81909 21.811C9.90002 22.2363 9.85453 22.6763 9.68842 23.0756C9.52231 23.475 9.24296 23.8161 8.88538 24.0559C8.52779 24.2957 8.10791 24.4237 7.67847 24.4237C7.38955 24.4211 7.10399 24.3611 6.83807 24.2472C6.57216 24.1333 6.3311 23.9676 6.12866 23.7597C5.92623 23.5518 5.76639 23.3057 5.65826 23.0355C5.55013 22.7653 5.49584 22.4763 5.49847 22.185ZM21.3045 24.4237C20.8711 24.4303 20.4453 24.3087 20.0797 24.074C19.7141 23.8393 19.4247 23.5017 19.2471 23.103C19.0696 22.7042 19.0117 22.2618 19.0806 21.8303C19.1496 21.3988 19.3423 20.9971 19.6351 20.6748C19.9278 20.3524 20.3077 20.1236 20.728 20.0165C21.1482 19.9095 21.5903 19.929 21.9997 20.0724C22.4091 20.2159 22.7679 20.4771 23.0317 20.8238C23.2956 21.1706 23.453 21.5877 23.4845 22.0236C23.5269 22.6155 23.3369 23.2004 22.9555 23.6523C22.7706 23.8745 22.5436 24.0574 22.2877 24.1901C22.0319 24.3227 21.7524 24.4025 21.4655 24.4247L21.3045 24.4237ZM8.59351 17.4855C8.38116 17.4851 8.17488 17.414 8.00671 17.2833C7.83855 17.1525 7.71792 16.9694 7.66351 16.7624L3.73651 2.19527H0.978516C0.719001 2.19527 0.470064 2.09128 0.28656 1.90622C0.103056 1.72116 0 1.47018 0 1.20847C0 0.946764 0.103056 0.695782 0.28656 0.510726C0.470064 0.325669 0.719001 0.22168 0.978516 0.22168H4.45752C4.66982 0.222254 4.876 0.293463 5.04413 0.424184C5.21226 0.554905 5.33295 0.737883 5.38751 0.944787L9.31451 15.5119H20.0185L23.5765 7.12665H11.7185C11.459 7.12665 11.2101 7.02266 11.0266 6.83761C10.8431 6.65255 10.74 6.40157 10.74 6.13986C10.74 5.87815 10.8431 5.62717 11.0266 5.44211C11.2101 5.25705 11.459 5.15306 11.7185 5.15306H25.0535C25.2131 5.15352 25.3701 5.19451 25.5099 5.27223C25.6497 5.34995 25.7679 5.46195 25.8535 5.59784C25.9413 5.73569 25.9945 5.89303 26.0084 6.05627C26.0224 6.21951 25.9966 6.38368 25.9335 6.53465L21.5425 16.8935C21.469 17.0684 21.3462 17.2177 21.1895 17.3229C21.0327 17.4281 20.8488 17.4846 20.6605 17.4855H8.59351Z" fill="#EF5B70"/>
+</svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="addToCart">Add to Cart</span></button>
+</div>
+
+    </div>
+    <div class="product-box center">
+        <div class="product">
+            <img class="product__img" src="img/main/catalog/1.png" alt="product">
+            <div class="product__content">
+                <a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
+                <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="product__price">$52.00</p>
+            </div>
+        </div>
+                <div class="product">
+            <img class="product__img" src="img/main/catalog/2.png" alt="product">
+            <div class="product__content">
+                <a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
+                <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="product__price">$52.00</p>
+            </div>
+        </div>
+                <div class="product">
+            <img class="product__img" src="img/main/catalog/3.png" alt="product">
+            <div class="product__content">
+                <a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
+                <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="product__price">$52.00</p>
+            </div>
+        </div>
+    </div>
+        <footer>
+        <div class="footer_center_width">
+            <div class="footer_center">
+                <div class="content_left">
+                    <div><img src="img/footer/foto_circle.png" alt="Фото"></div>
+                    <div>
+                        <p class="content_left_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span style="font-style: italic">a pulvinar purus condimentum“</span></p>
+                    </div>
+                </div>
+
+                <div class="content_right">
+                    <p class = "content_right_h">SUBSCRIBE<br>
+                    <span style="font-size: 16px; font-weight: 400">FOR OUR NEWLETTER AND PROMOTION</span></p>
+
+                    <div class="email_button">
+                        <div class="input placeholder-wave"><input type="text" placeholder="Enter Your Email"></div>
+                        <div class="button_subscribe"><input type="button" value="Subscribe"></button></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom_center">
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <div>
+                        <p class="footer_bottom_left_text">© 2022 Brand All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="footer_bottom_right">
+                    <div class="icons">
+
+
+                        <div class="icons_team">
+                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_190_1618)">
+                                <path d="M6.7402 0.203125C3.55552 0.203125 0.408081 2.34063 0.408081 5.8C0.408081 8 1.63726 9.25 2.38221 9.25C2.68951 9.25 2.86643 8.3875 2.86643 8.14375C2.86643 7.85313 2.13079 7.23438 2.13079 6.025C2.13079 3.5125 4.03043 1.73125 6.48878 1.73125C8.60259 1.73125 10.167 2.94062 10.167 5.1625C10.167 6.82187 9.50585 9.93437 7.3641 9.93437C6.59121 9.93437 5.93006 9.37187 5.93006 8.56563C5.93006 7.38438 6.74951 6.24062 6.74951 5.02187C6.74951 2.95312 3.83487 3.32812 3.83487 5.82812C3.83487 6.35313 3.90006 6.93437 4.13286 7.4125C3.70451 9.26875 2.82919 12.0344 2.82919 13.9469C2.82919 14.5375 2.91299 15.1188 2.96886 15.7094C3.0744 15.8281 3.02163 15.8156 3.18304 15.7563C4.74744 13.6 4.69157 13.1781 5.39928 10.3562C5.78107 11.0875 6.76814 11.4812 7.55034 11.4812C10.8468 11.4812 12.3274 8.24688 12.3274 5.33125C12.3274 2.22813 9.66415 0.203125 6.7402 0.203125Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_190_1618">
+                                <rect width="11.9193" height="16" fill="white" transform="translate(0.408081)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                        <div class="icons_team">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_190_1614)">
+                                <path d="M14.4181 4.74107C14.4281 4.88319 14.4281 5.02535 14.4281 5.16747C14.4281 9.50247 11.1509 14.4974 5.16096 14.4974C3.31558 14.4974 1.60132 13.9593 0.159302 13.0253C0.421495 13.0558 0.673569 13.0659 0.94585 13.0659C2.46851 13.0659 3.8702 12.5482 4.98953 11.6649C3.5576 11.6345 2.3576 10.6903 1.94415 9.39081C2.14585 9.42125 2.34751 9.44156 2.5593 9.44156C2.85172 9.44156 3.14418 9.40094 3.41643 9.32991C1.92401 9.02531 0.80465 7.70553 0.80465 6.11163V6.07103C1.23825 6.31469 1.74249 6.46697 2.2769 6.48725C1.39959 5.89841 0.824826 4.89335 0.824826 3.75628C0.824826 3.14716 0.98614 2.58878 1.26851 2.10147C2.87187 4.09131 5.28195 5.39078 7.98443 5.53294C7.93403 5.28928 7.90376 5.0355 7.90376 4.78169C7.90376 2.97457 9.35586 1.5025 11.1609 1.5025C12.0987 1.5025 12.9457 1.89844 13.5407 2.53803C14.2768 2.39591 14.9827 2.12178 15.6079 1.74616C15.3659 2.5076 14.8516 3.14719 14.176 3.55325C14.8315 3.48222 15.4668 3.29944 16.0516 3.04566C15.608 3.69538 15.0533 4.27403 14.4181 4.74107Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_190_1614">
+                                <rect width="15.8924" height="16" fill="white" transform="translate(0.159302)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

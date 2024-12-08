@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  display: block;
+  color: green;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "→";
+  padding-right: 0.5em;
+}
+
+details[open] > summary::before {
+  content: "↓";
+}/*# sourceMappingURL=style1.css.map */

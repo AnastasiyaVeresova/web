@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="box-content">
+        <!-- Включение шапки -->
+        <div w3-include-html="header.html"></div>
+
+        <main>
+            <section class="cart-section">
+                <div class="container">
+                    <h1 class="cart-section__title">Your Cart</h1>
+                    <div class="cart__wrapper" id="cart-items">
+                        <!-- Товары будут добавлены сюда с помощью JavaScript -->
+                    </div>
+                    <div class="cart-section__btn">
+                        <button class="btn-checkout">Оформить заказ</button>
+                        <button class="btn-clear-cart">Очистить корзину</button> <!-- Кнопка для очистки корзины -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Включение подвала -->
+        <div w3-include-html="footer.html"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                            // Обновляем количество товаров в корзине после загрузки шапки
+                            updateCartCount();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    return;
+                }
+            }
+        }
+        includeHTML();
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@import "vars";
+@import "mixins2";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+summary {
+	display: block;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+.sort {
+  display: flex;
+  gap: 28px;
+}
+
+.details {
+  position: relative;
+	&__box {
+    position: absolute;
+    left: -9px;
+    top: 22px;
+		box-shadow: 6px 4px 35px 0px #00000036;
+		background: #ffffff;
+		padding: 7px 9px 11px;
+		box-sizing: border-box;
+		width: 79px;
+		@include FlexSimpleColumn();
+		gap: 6px;
+	}
+}

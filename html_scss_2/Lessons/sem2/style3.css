@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 75px;
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  width: 1140px;
+  align-items: center;
+  padding: 18px 0 19px;
+  justify-content: space-between;
+}
+.navigation__left-part {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.navigation__right-part {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  right: -9px;
+  top: -4px;
+  padding: 5px;
+  width: 19px;
+  height: 19px;
+  background-color: #f16d7f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.nav-btn {
+  cursor: pointer;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+.top {
+  overflow: hidden;
+}
+
+.promo {
+  height: 764px;
+  background: #333;
+}
+
+.nav {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  display: none;
+}
+
+#check {
+  position: absolute;
+  left: -99999px;
+  visibility: hidden;
+}
+#check:checked ~ .nav {
+  display: block;
+}
+
+.menu {
+  width: 232px;
+  position: absolute;
+  top: 40px;
+  padding: 32px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+  transition: right 0.5s;
+}
+.menu__heading {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  color: #000;
+  margin-bottom: 4px;
+}
+.menu__subheading {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #f16d7f;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.menu__link {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #6f6e6e;
+}
+.menu__link:hover {
+  color: #f16d7f;
+}
+.menu__menu-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  list-style-type: none;
+  padding-left: 20px;
+}/*# sourceMappingURL=style3.css.map */
