@@ -16,6 +16,13 @@
     <!-- Шапка -->
         <!-- Включение шапки -->
 <div w3-include-html="header.html"></div>
+<div class="cart__cart-count_wrapper center">
+    <div class="header__right">    <div class="cart__cart-count">0</div></div>
+</div>
+
+
+
+
 
     <!-- Заголовок и хлебные крошки -->
     <div class="top-head center">
@@ -133,8 +140,12 @@
     </div>
 
     <!-- Каталог продуктов -->
-    <div class="product-box center">
+    <div class="product-box center" id="productBox">
         <!-- Продукты будут добавлены сюда с помощью JavaScript -->
+    </div>
+    <div class="pagination_width">
+        <div class="pagination" id="pagination-container"></div>
+
     </div>
 
     <!-- Подвал -->

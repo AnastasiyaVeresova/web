@@ -1,135 +1,144 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import "vars";
 @import "mixins3";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 
 body {
-    font-family: sans-serif;
+	font-family: "latoblack";
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .header {
-    height: 75px;
-    background: #222222;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+	height: 75px;
+	background: #222222;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 }
 
 .navigation {
-    display: flex;
-    width: 1140px;
-    align-items: center;
-    padding: 18px 0 19px;
-    justify-content: space-between;
-    &__left-part {
-        display: flex;
-        align-items: center;
-        gap: 41px;
-    }
-    &__right-part {
-        display: flex;
-        align-items: center;
-        gap: 33px;
-        position: relative;
-    }
+	display: flex;
+	width: 1140px;
+	align-items: center;
+	padding: 18px 0 19px;
+	justify-content: space-between;
+	&__left-part {
+		display: flex;
+		align-items: center;
+		gap: 41px;
+	}
+	&__right-part {
+		display: flex;
+		align-items: center;
+		gap: 33px;
+		position: relative;
+	}
 }
 
 .number {
-    position: absolute;
-    right: -9px;
-    top: -4px;
-    padding: 5px;
-    width: 19px;
-    height: 19px;
-    background-color: $selectedColor;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: absolute;
+	right: -9px;
+	top: -4px;
+	padding: 5px;
+	width: 19px;
+	height: 19px;
+	background-color: $selectedColor;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .count {
-    text-align: center;
-    color: #fff;
-    font-size: 12px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
 }
 
 .nav-btn {
-    cursor: pointer;
-    background-color: inherit;
-    outline: none;
-    border: none;
+	cursor: pointer;
+	background-color: inherit;
+	outline: none;
+	border: none;
 }
 
 .top {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .promo {
-    height: 764px;
-    background: #333;
+	height: 764px;
+	background: #333;
 }
 
 .nav {
-    position: absolute;
-    // transition: right 0.3s;
-    z-index: 1;
-    right: 0px;
-    display: none;
+	position: absolute;
+	// transition: right 0.3s;
+	z-index: 1;
+	right: 0px;
+	display: none;
 }
 
 #check {
-    position: absolute;
-    left: -99999px;
-    visibility: hidden;
-    &:checked~.nav {
-        display: block;
-    }
+	position: absolute;
+	left: -99999px;
+	visibility: hidden;
+	&:checked ~ .nav {
+		display: block;
+	}
 }
 
 .menu {
-    width: 232px;
-    position: absolute;
-    top: 40px;
-    padding: 32px;
-    background: #fff;
-    box-sizing: border-box;
-    box-shadow: 6px 4px 35px 0px #00000036;
-    transition: right 0.5s;
-    &__heading {
-        @include textFor700;
-        color: #000;
-        margin-bottom: 4px;
-    }
-    &__subheading {
-        @include textFor400;
-        color: $selectedColor;
-        margin-bottom: 12px;
-        margin-top: 20px;
-    }
-    &__link {
-        @include textFor400;
-        color: #6f6e6e;
-        &:hover {
-            color: $selectedColor;
-        }
-    }
-    &__menu-ul {
-        display: flex;
-        flex-direction: column;
-        gap: 11px;
-        list-style-type: none;
-        padding-left: 20px;
-    }
+	width: 232px;
+	font-family: "latoblack";
+	position: absolute;
+	top: 40px;
+	padding: 32px;
+	background: #fff;
+	box-sizing: border-box;
+	box-shadow: 6px 4px 35px 0px #00000036;
+	transition: right 0.5s;
+	&__heading {
+		@include textFor700;
+            font-family: "latoblack";
+
+		color: #000;
+		margin-bottom: 4px;
+	}
+	&__subheading {
+            font-family: "latoblack";
+
+		@include textFor400;
+		color: $selectedColor;
+		margin-bottom: 12px;
+		margin-top: 20px;
+	}
+	&__link {
+            font-family: "latolight";
+
+		@include textFor400;
+		color: #6f6e6e;
+		&:hover {
+			color: $selectedColor;
+		}
+	}
+	&__menu-ul {
+            font-family: "latolight";
+
+		display: flex;
+		flex-direction: column;
+		gap: 11px;
+		list-style-type: none;
+		padding-left: 20px;
+	}
 }

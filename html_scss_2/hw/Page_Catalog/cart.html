@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart_styles.css">
+
     <title>Cart</title>
 </head>
 <body>
     <div class="box-content">
         <!-- Включение шапки -->
         <div w3-include-html="header.html"></div>
+        <div class="cart__cart-count_wrapper center">
+    <div class="header__right">    <div class="cart__cart-count">0</div></div>
+</div>
 
         <main>
-            <section class="cart-section">
-                <div class="container">
-                    <h1 class="cart-section__title">Your Cart</h1>
-                    <div class="cart__wrapper" id="cart-items">
-                        <!-- Товары будут добавлены сюда с помощью JavaScript -->
+            <section class="cart__cart-section">
+                <div class="cart__container">
+                    <div class="cart__cart-section__title__container center">
+                        <h1 class="cart__cart-section__title">SHOPPING CART</h1>
                     </div>
-                    <div class="cart-section__btn">
-                        <button class="btn-checkout">Оформить заказ</button>
-                        <button class="btn-clear-cart">Очистить корзину</button> <!-- Кнопка для очистки корзины -->
+                    <div class="cart__wrapper center">
+                        <div class="cart__cart-items" id="cart-items">
+                            <!-- Товары будут добавлены сюда с помощью JavaScript -->
+                        </div>
+                        <div class="checkout">
+                            <form class="shipping-address">
+                                <h2>SHIPPING ADDRESS</h2>
+                                <input type="text" placeholder="Bangladesh">
+                                <input type="text" placeholder="City">
+                                <input type="text" placeholder="State">
+                                <input type="text" placeholder="Postcode / Zip">                               
+                            </form>
+                            <button type="button" class="get-quote">GET A QUOTE</button>
+                            <div class="total">
+                                <p>SUB TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sub-total">$0</span></p>
+                                <p>GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="grand-total">$0</span></p>
+                                <hr>
+                                <button class="proceed-to-checkout">PROCEED TO CHECKOUT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__cart-section__btn center">
+                        <button class="cart__btn-clear-cart-shop">CLEAR SHOPPING CART</button>
+                        <button class="cart__btn-continue-shopping"><a href="index.html">CONTINUE SHOPPING</a></button>
                     </div>
                 </div>
             </section>
