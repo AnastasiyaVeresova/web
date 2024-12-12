@@ -124,7 +124,7 @@ body {
 		}
 
 		.dropdown-item {
-			color: $dropdown-item-color;
+			color: $colorText;
 			text-decoration: none;
 			padding: 0.5rem 1rem;
 			display: block;
@@ -134,7 +134,7 @@ body {
 			}
 
 			&.pink-color {
-				color: $pink-color;
+				color: $colorSelectSite;
 			}
 		}
 
@@ -171,12 +171,12 @@ body {
 	z-index: 10;
 
 	&__content {
-		background-color: #fff;
+		background-color: $dropdown-bg;
 		padding: 0px 16px 16px;
 	}
 
 	&[open] {
-		background: #fff;
+		background: $dropdown-bg;
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 	}
 
@@ -270,7 +270,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
-		background: #fff;
+		background: $dropdown-bg;
 		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 		padding: 7px 30px 11px 9px;
 		position: absolute;
@@ -330,7 +330,7 @@ body {
 		cursor: pointer;
 		background: transparent;
 		outline: none;
-		border: 1px solid #ffffff;
+		border: 1px solid $dropdown-bg;
 		padding: 13px 16px;
 		display: flex;
 		align-items: center;
@@ -341,7 +341,7 @@ body {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
-		color: #ffffff;
+		color: $dropdown-bg;
 	}
 
 	&__img__hover-btn::before {
@@ -428,7 +428,7 @@ body {
 	position: absolute;
 	top: 40px;
 	padding: 32px;
-	background: #fff;
+	background: $dropdown-bg;
 	box-sizing: border-box;
 	box-shadow: 6px 4px 35px 0px #00000036;
 	right: 0px;
@@ -461,7 +461,7 @@ body {
 }
 
 .nav {
-	background: #fff;
+	background: $dropdown-bg;
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 	width: 232px;
 	// padding: 32px;
@@ -521,7 +521,7 @@ input[type="text"] {
 input[type="button"] {
 	border: none;
 	background-color: $colorSelectSite;
-	color: #ffffff;
+	color: $dropdown-bg;
 	text-decoration: none;
 }
 
@@ -691,7 +691,7 @@ select:focus {
 		align-items: center;
 		display: flex;
 		padding: 15px 30px;
-		color: #ffffff;
+		color: $dropdown-bg;
 		font-size: 14px;
 		line-height: 17px;
 		font-weight: 400;
@@ -739,8 +739,7 @@ select:focus {
 		background-color: $colorSelectSite;
 
 		path {
-			fill: #ffffff;
-		}
+			fill: $dropdown-bg}
 	}
 }
 
@@ -786,7 +785,7 @@ select:focus {
 	&__btn-checkout {
 		padding: 10px 20px;
 		background-color: $colorSelectSite;
-		color: #fff;
+		color: $dropdown-bg;
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
@@ -794,7 +793,7 @@ select:focus {
 	&__btn-clear-cart {
 		padding: 10px 20px;
 		background-color: $colorSelectSite;
-		color: #fff;
+		color: $dropdown-bg;
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
@@ -860,7 +859,7 @@ select:focus {
 }
 
 .pagination button {
-	background-color: #fff;
+	background-color: $dropdown-bg;
 	color: #8a8a8a;
 	margin: 0 2px;
 	padding: 5px 10px;
@@ -899,5 +898,4 @@ select:focus {
 }
 .cart__cart-count_wrapper {
 	position: relative;
-	height: 75px;
 }

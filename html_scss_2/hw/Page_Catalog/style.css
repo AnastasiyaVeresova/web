@@ -128,7 +128,7 @@ body {
   background-color: #f0f0f0;
 }
 .dropdown .dropdown-menu .dropdown-item.pink-color {
-  color: #ff69b4;
+  color: #F16D7F;
 }
 .dropdown .dropdown-menu .ms-4 {
   margin-left: 1rem;
@@ -303,7 +303,7 @@ body {
   cursor: pointer;
   background: transparent;
   outline: none;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   padding: 13px 16px;
   display: flex;
   align-items: center;
@@ -313,7 +313,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #ffffff;
+  color: #fff;
 }
 .product__img__hover-btn::before {
   content: url(img/main/catalog/btn-cart.svg);
@@ -498,7 +498,7 @@ input[type=text] {
 input[type=button] {
   border: none;
   background-color: #F16D7F;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -647,7 +647,7 @@ select:focus {
   align-items: center;
   display: flex;
   padding: 15px 30px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
@@ -687,7 +687,7 @@ select:focus {
   background-color: #F16D7F;
 }
 .footer__icons_team:focus path, .footer__icons_team:active path, .footer__icons_team:hover path {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .cart {
@@ -780,7 +780,7 @@ select:focus {
   display: inline-flex;
   align-items: center;
   margin-top: 50px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -826,5 +826,4 @@ select:focus {
 
 .cart__cart-count_wrapper {
   position: relative;
-  height: 75px;
 }/*# sourceMappingURL=style.css.map */

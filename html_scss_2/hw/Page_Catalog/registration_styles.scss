@@ -1,0 +1,117 @@
+
+
+@import "vars";
+@import "mixins";
+
+* {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.content_reg {
+    display: flex;
+    overflow: hidden;
+
+    max-width: 1200px;
+
+    .form-section {
+        flex: 1;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 16px;
+            font-weight: 400;
+            color: $backBlock;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 360px;
+            height: 45px;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #A4A4A4;
+            background: #FFFFFF;
+            color: #B1B1B1;
+            font-size: 13px;
+            font-weight: 400;
+}
+
+        .gender-selection {
+            display: flex;
+            margin-bottom: 2rem;
+
+            input[type="radio"] {
+                margin-right: 0.5rem;
+                background: #B1B1B1;
+
+            }
+
+            label {
+                margin-right: 1rem;
+                font-size: 11px;
+                font-weight: 400;
+                color: $colorText;
+            }
+        }
+
+        p {
+            margin-bottom: 3rem;
+            color: #B1B1B1;
+            width: 400px;
+        }
+
+        button {
+            background-color: $colorSelectSite;
+            color: $dropdown-bg;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+
+                    }
+    }
+
+    .perks-section {
+        flex: 1;
+        padding: 2rem;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 24px;
+            font-weight: 400;
+            color: $colorText;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 24px;
+            font-weight: 400;
+            color: $colorText;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                font-size: 24px;
+                font-weight: 400;
+                color: $colorText;
+
+                &:before {
+                    content: "✓";
+                    margin-right: 0.5rem;
+                    color: $colorText;
+                }
+            }
+        }
+    }
+}
