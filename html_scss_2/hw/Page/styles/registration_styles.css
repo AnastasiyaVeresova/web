@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.content_reg {
+  display: flex;
+  overflow: hidden;
+  max-width: 1200px;
+}
+.content_reg .form-section {
+  flex: 1;
+}
+.content_reg .form-section h2 {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+}
+.content_reg .form-section input[type=text],
+.content_reg .form-section input[type=email],
+.content_reg .form-section input[type=password] {
+  width: 360px;
+  height: 45px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #a4a4a4;
+  background: #ffffff;
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 400;
+}
+.content_reg .form-section .gender-selection {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.content_reg .form-section .gender-selection input[type=radio] {
+  margin-right: 0.5rem;
+  background: #b1b1b1;
+}
+.content_reg .form-section .gender-selection label {
+  margin-right: 1rem;
+  font-size: 11px;
+  font-weight: 400;
+  color: #000;
+}
+.content_reg .form-section p {
+  margin-bottom: 3rem;
+  color: #b1b1b1;
+  width: 400px;
+}
+.content_reg .form-section button {
+  background-color: #F16D7F;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+.content_reg .perks-section {
+  flex: 1;
+  padding: 2rem;
+}
+.content_reg .perks-section h2 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.content_reg .perks-section p {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.content_reg .perks-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.content_reg .perks-section ul li {
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+}
+.content_reg .perks-section ul li:before {
+  content: "✓";
+  margin-right: 0.5rem;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .content_reg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer__top {
+    display: none;
+  }
+  .footer__center {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__content_right {
+    padding-right: 0px;
+  }
+}/*# sourceMappingURL=registration_styles.css.map */

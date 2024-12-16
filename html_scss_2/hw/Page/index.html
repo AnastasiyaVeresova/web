@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/cart_styles.css" />
+
+		<title>Shop</title>
+	</head>
+	<body>
+		<div class="box-content">
+			<!-- Шапка -->
+			<!-- Включение шапки -->
+			<div w3-include-html="template/header.html"></div>
+			<div class="cart__cart-count_wrapper center">
+				<div class="header__right"><div class="cart__cart-count">0</div></div>
+			</div>
+			<div class="banner center">
+				<section class="banner__content">
+					<img src="img/main/banners/Layer_57.svg" alt="" />
+
+					<div class="banner__text">
+						<div class="banner__rectangle"></div>
+						<p>
+							<span style="font-size: 48px">THE BRAND</span> <br />
+							OF LUXERIOUS <span class="pink-color">FASHION</span>
+						</p>
+					</div>
+				</section>
+			</div>
+			<main class="main center">
+				<section class="category__category-section">
+					<div class="category__container">
+						<div class="category__wrapper">
+							<div class="category__category-women">
+								<div class="category__category-bg">
+									<a href="index_catalog.html">
+										<p class="category__category-text">30% OFF</p>
+										<h3 class="category__category-title">FOR WOMEN</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="category__category-men">
+								<div class="category__category-bg">
+									<a href="index_catalog.html"
+										><p class="category__category-text">HOT DEAL</p>
+										<h3 class="category__category-title">FOR MEN</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="category__category-kids">
+								<div class="category__category-bg">
+									<a href="index_catalog.html">
+										<p class="category__category-text">NEW ARRIVALS</p>
+										<h3 class="category__category-title">FOR KIDS</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="category__category-accesories">
+								<div class="category__category-bg">
+									<a href="index_catalog.html">
+										<p class="category__category-text">LUXIROUS & TRENDY</p>
+										<h3 class="category__category-title">ACCESORIES</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="cart__cart-section">
+					<div">
+					<h1 class="cart__title">Fetured Items</h1>
+					<p class="cart__description">
+						Shop for items based on what we featured in this week
+					</p>
+
+					<!-- Каталог продуктов -->
+					<div class="product-box center" id="productBox">
+						<!-- Продукты будут добавлены сюда с помощью JavaScript -->
+					</div>
+					<div class="pagination_width">
+						<div class="pagination" id="pagination-container"></div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Подвал -->
+			<div w3-include-html="template/footer.html"></div>
+		</div>
+
+		<script src="data/data_hw1_6.js"></script>
+		<script src="scripts/script.js"></script>
+		<script>
+			function includeHTML() {
+				var z, i, elmnt, file, xhttp;
+				z = document.getElementsByTagName("*");
+				for (i = 0; i < z.length; i++) {
+					elmnt = z[i];
+					file = elmnt.getAttribute("w3-include-html");
+					if (file) {
+						xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function () {
+							if (this.readyState == 4) {
+								if (this.status == 200) {
+									elmnt.innerHTML = this.responseText;
+								}
+								if (this.status == 404) {
+									elmnt.innerHTML = "Page not found.";
+								}
+								elmnt.removeAttribute("w3-include-html");
+								includeHTML();
+								// Обновляем количество товаров в корзине после загрузки шапки
+								updateCartCount();
+							}
+						};
+						xhttp.open("GET", file, true);
+						xhttp.send();
+						return;
+					}
+				}
+			}
+			includeHTML();
+		</script>
+	</body>
+</html>
