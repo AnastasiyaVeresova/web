@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css" />
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles/style.css">
 
-    <title>Login</title>
-</head>
-<body>
-    <div class="box-content">
-        <!-- Шапка -->
-        <!-- Включение шапки -->
-        <div w3-include-html="../template/header.html"></div></div>
-    <h1>Login</h1>
-    <form id="loginForm">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="box-content">
+			<!-- Шапка -->
+			<!-- Включение шапки -->
+			<div
+				id="header-include"
+				data-include-html="../template/header.html"
+			></div>
+			<div class="cart__cart-count_wrapper center">
+				<div class="header__right"><div class="cart__cart-count">0</div></div>
+			</div>
+		</div>
+		<h1>Login</h1>
+		<form id="loginForm">
+			<input type="email" id="email" placeholder="Email" required>
+			<input type="password" id="password" placeholder="Password" required>
+			<button type="submit">Login</button>
+		</form>
+		<div id="footer-include" data-include-html="../template/footer.html"></div>
+		<script src="../scripts/script.js"></script>
+		<script src="../scripts/cart.js"></script>
+		<script>
+			document
+				.getElementById("loginForm")
+				.addEventListener("submit", function (event) {
+					event.preventDefault();
 
-            const email = document.getElementById('email').value.trim();
-            const password = document.getElementById('password').value.trim();
+					const email = document.getElementById("email").value.trim();
+					const password = document.getElementById("password").value.trim();
 
-            fetch('/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ email, password })
-            })
-            .then(response => response.text())
-            .then(data => {
-                if (data === 'Успешно!') {
-                    window.location.href = '/profile';
-                } else {
-                    alert('Неверный e-mail или пароль');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Error logging in');
-            });
-        });
-    </script>
-</body>
+					fetch("/login", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ email, password }),
+					})
+						.then((response) => response.text())
+						.then((data) => {
+							if (data === "Успешно!") {
+								window.location.href = "/profile";
+							} else {
+								alert("Неверный e-mail или пароль");
+							}
+						})
+						.catch((error) => {
+							console.error("Error:", error);
+							alert("Error logging in");
+						});
+				});
+		</script>
+		<script>
+			function includeHTML() {
+				var z, i, elmnt, file, xhttp;
+				z = document.getElementsByTagName("*");
+				for (i = 0; i < z.length; i++) {
+					elmnt = z[i];
+					file = elmnt.getAttribute("data-include-html");
+					if (file) {
+						xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function () {
+							if (this.readyState == 4) {
+								if (this.status == 200) {
+									elmnt.innerHTML = this.responseText;
+								}
+								if (this.status == 404) {
+									elmnt.innerHTML = "Page not found.";
+								}
+								elmnt.removeAttribute("data-include-html");
+								includeHTML();
+								// Обновляем количество товаров в корзине после загрузки шапки
+								updateCartCount();
+							}
+						};
+						xhttp.open("GET", file, true);
+						xhttp.send();
+						return;
+					}
+				}
+			}
+			includeHTML();
+		</script>
+	</body>
 </html>

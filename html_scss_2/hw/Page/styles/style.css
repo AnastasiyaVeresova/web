@@ -1099,15 +1099,24 @@ select:focus {
 }
 
 @media (max-width: 768px) {
-  .header, .footer, .top-head, .product-box, .cart {
+  .header,
+  .footer,
+  .top-head,
+  .product-box,
+  .cart {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .header__bottom, .footer__bottom, .top-head__bottom, .product-box__bottom, .cart__bottom {
+  .header__bottom,
+  .footer__bottom,
+  .top-head__bottom,
+  .product-box__bottom,
+  .cart__bottom {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .header__left, .header__right {
+  .header__left,
+  .header__right {
     gap: 20px;
   }
   .filter-sorted {
@@ -1141,20 +1150,31 @@ select:focus {
   .cart__cart-section__title {
     padding-left: 20px;
   }
-  .checkout, .shipping-address, .total {
+  .checkout,
+  .shipping-address,
+  .total {
     width: 100%;
   }
 }
 @media (max-width: 1024px) {
-  .header, .footer, .top-head, .product-box, .cart {
+  .header,
+  .footer,
+  .top-head,
+  .product-box,
+  .cart {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .header__bottom, .footer__bottom, .top-head__bottom, .product-box__bottom, .cart__bottom {
+  .header__bottom,
+  .footer__bottom,
+  .top-head__bottom,
+  .product-box__bottom,
+  .cart__bottom {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .header__left, .header__right {
+  .header__left,
+  .header__right {
     gap: 20px;
   }
   .filter-sorted {
@@ -1185,7 +1205,82 @@ select:focus {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .checkout, .shipping-address, .total {
+  .checkout,
+  .shipping-address,
+  .total {
     width: 100%;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .user,
+  .basket,
+  .cart__cart-count,
+  .banner__content img {
+    display: none;
+  }
+  .banner__content {
+    height: 363px;
+  }
+  .category__wrapper {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .category__category-women,
+  .category__category-men,
+  .category__category-kids,
+  .category__category-accesories {
+    width: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .category__category-bg {
+    width: 100%;
+  }
+  .category__category-text {
+    text-align: center;
+  }
+  .category__category-section {
+    margin-bottom: 50px;
+  }
+  .product-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .product {
+    width: 90%;
+  }
+  .footer__fon_footer {
+    margin-top: 70px;
+    gap: 20px;
+  }
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__center_width,
+  .footer__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer__content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__content_left div {
+    width: 80%;
+  }
+  .footer__content_right {
+    padding-right: 0px;
+  }
+  .footer__content_left_text {
+    text-align: center;
+    padding-right: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
